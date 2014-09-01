@@ -174,6 +174,9 @@ rm -f %{name}-%{version}-filelist
 
 echo "%dir %attr(0755,www,www) /usr/share/egroupware_tmp">> %{name}-%{version}-filelist
 echo "%dir %attr(0755,www,www) /usr/share/egroupware_sess">> %{name}-%{version}-filelist
+   echo "%attr(0755,www,www) /usr/share/egroupware_sess/.gitignore" >> %{name}-%{version}-filelist
+
+   echo "%attr(0755,www,www)    /usr/share/egroupware_tmp/.gitignore" >> %{name}-%{version}-filelist
 
 
 %clean
