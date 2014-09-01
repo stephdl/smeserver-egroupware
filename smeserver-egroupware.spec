@@ -8,14 +8,13 @@
 %define rpmver   4.0.4
 
 
-Summary:            eGroupware web application for SME >=8
+Summary:            eGroupware web application for SME >=9
 Name:               %{name}
 Version:            %{version}
 Release:            %{release}%{?dist}
 License:            GPL
 Group:              Web/Application
-Source:             %{name}-%{version}.tgz
-PAtch2:		    smeserver-egroupware-1.8.005-sme5127.patch
+Source:             %{name}-%{version}.tar.gz
 URL:                http://www.egroupware.org
 BuildRoot:          /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
