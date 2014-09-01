@@ -3,8 +3,8 @@
 # Name: Sylvain Gomez
 
 %define name smeserver-egroupware
-%define version 1.8.005
-%define release 5
+%define version 1.8.6
+%define release 2
 %define rpmver   4.0.4
 
 
@@ -20,7 +20,7 @@ URL:                http://www.egroupware.org
 BuildRoot:          /var/tmp/%{name}-%{version}-%{release}-buildroot
 BuildArchitectures: noarch
 BuildRequires:      e-smith-devtools
-Requires:           e-smith-base, e-smith-release >= 8
+Requires:           e-smith-base, e-smith-release >= 9
 Requires: 	    eGroupware >= 1.8
 Requires:	    eGroupware-gallery >= 1.8
 
@@ -40,6 +40,9 @@ https://yourdomain.com/egroupware
 
 
 %changelog
+* Mon Sep 01 2014 stephane de Labrusse <stephdl@de-labrusse.fr> 1.8.6-2.sme
+- Initial release to sme9 in stephdlrepo
+
 * Sun Dec 15 2013  JP Pialasse <tests@pialasse.com> 1.8.005-5.sme
 - fix hostname [SME: 5127]
 
